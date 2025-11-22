@@ -1,0 +1,19 @@
+{
+  "combos": [
+    {
+      "a": "fogo",
+      "b": "agua",
+      "resultado": "vapor"
+    },
+    {
+      "a": "terra",
+      "b": "agua",
+      "resultado": "lama"
+    },
+    {
+      "a": "fogo",
+      "b": "ar",
+      "resultado": "energia"
+    }
+  ]
+}

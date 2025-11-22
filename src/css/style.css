@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #8ab4f8; /* Cor primária (azul claro) */
+    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
+    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
+    --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+}
+
+/* Corpo */
+body {
+    background: url("../assets/images/laboratorio.png");
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Área principal */
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Inputs */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-size: 1rem;
+}
+
+/* Botão */
+button {
+    padding: 12px;
+    background: #4a7df2;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2d5fd4;
+}
+
+/* Resultado */
+.resultado {
+    min-height: 120px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+}
