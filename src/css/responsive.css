@@ -1,11 +1,28 @@
-/* Responsividade */
-@media (max-width: 480px) {
-    button {
-        font-size: 0.9rem;
-        padding: 10px;
+@media (max-width: 1024px) {
+    main {
+        max-width: 850px;
     }
+}
 
-    header h1 {
-        font-size: 1.6rem;
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+        gap: 15px;
+    }
+    .card {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    body {
+        background-size: cover; /* Sempre cobre sem distorção */
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        max-width: 90%;
+    }
+    .card {
+        width: 80%;
     }
 }

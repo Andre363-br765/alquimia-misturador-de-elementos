@@ -1,30 +1,18 @@
-// Lista de elementos disponíveis
+// Lista de elementos básicos (mostrados nos selects)
 const elementos = [
-    "Fogo",
-    "Água",
-    "Terra",
-    "Ar",
-    "Luz",
-    "Sombras",
-    "Metal",
-    "Gelo",
-    "Vida",
-    "Caos",
-    "Café",
+    "fogo", "agua", "terra", "ar", "metal", "energia", "planta", "animal",
+    "pedra", "calor", "frio", "eletricidade", "luz", "escuridao", "vento",
+    "vida", "magia"
 ];
 
 // Resultados aleatórios caso a fusão não exista
 const resultadosAleatorios = [
-    "Gelatina Explosiva",
-    "Pó Místico Sabor Picanha",
-    "Cobra de Fumaça",
-    "Lodo Interdimensional",
-    "Névoa com Cheiro de Café",
-    "Peixe Invisível",
-    "Pedra Chorona",
-    "Luz Emburrada",
-    "Bolha Mutante",
-    "Areia Viva (literalmente)"
+    "poeira mágica",
+    "energia instável",
+    "fragmento desconhecido",
+    "eco dimensional",
+    "cristal estranho",
+    "substância misteriosa"
 ];
 
 // DOM
@@ -47,10 +35,10 @@ function carregarElementos() {
     });
 }
 
-// Busca fusão pré-definida no JSON
+// Busca fusão dentro do JSON (data.json)
 async function buscarFusao(el1, el2) {
     try {
-        const response = await fetch("data.json");
+        const response = await fetch("./data.json");
         const fusoes = await response.json();
 
         return fusoes.find(f =>
@@ -64,36 +52,44 @@ async function buscarFusao(el1, el2) {
     }
 }
 
-// Retorna um resultado aleatório
+// Resultado aleatório caso não exista fusão
 function gerarResultadoAleatorio() {
-    const aleatorio = Math.floor(Math.random() * resultadosAleatorios.length);
-    return resultadosAleatorios[aleatorio];
+    const i = Math.floor(Math.random() * resultadosAleatorios.length);
+    return resultadosAleatorios[i];
 }
 
-// Lógica principal
+// Evento principal
 btnMisturar.addEventListener("click", async () => {
     const el1 = select1.value;
     const el2 = select2.value;
 
+    // Verificações
     if (!el1 || !el2) {
         resultBox.textContent = "Selecione dois elementos!";
         return;
     }
 
     if (el1 === el2) {
-        resultBox.textContent = "Fusão cancelada: não pode misturar o mesmo elemento!";
+        resultBox.textContent = "Você tentou combinar o mesmo elemento!";
         return;
     }
 
-    // Procura fusão no JSON
+    // Procura no JSON
     const fusao = await buscarFusao(el1, el2);
 
     if (fusao) {
-        resultBox.textContent = `✨ ${fusao.result}`;
+        resultBox.innerHTML = `
+            <h2>✨ ${fusao.resultado}</h2>
+            <p>${fusao.descricao}</p>
+            <small><b>Tags:</b> ${fusao.tags.join(", ")}</small>
+        `;
     } else {
-        // Resultado aleatório
+        // Fusão aleatória
         const aleatorio = gerarResultadoAleatorio();
-        resultBox.textContent = `🔮 Fusão inesperada: ${aleatorio}`;
+        resultBox.innerHTML = `
+            <h2>🔮 Resultado inesperado</h2>
+            <p>${aleatorio}</p>
+        `;
     }
 });
 

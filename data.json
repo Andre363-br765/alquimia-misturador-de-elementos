@@ -1,19 +1,63 @@
-{
-  "combos": [
-    {
-      "a": "fogo",
-      "b": "agua",
-      "resultado": "vapor"
-    },
-    {
-      "a": "terra",
-      "b": "agua",
-      "resultado": "lama"
-    },
-    {
-      "a": "fogo",
-      "b": "ar",
-      "resultado": "energia"
-    }
-  ]
-}
+[
+  { "a": "fogo", "b": "agua", "resultado": "vapor", "descricao": "A água evapora com calor intenso.", "tags": ["calor", "transformação"] },
+  { "a": "fogo", "b": "ar", "resultado": "energia", "descricao": "Ar quente em movimento cria energia.", "tags": ["energia"] },
+  { "a": "fogo", "b": "terra", "resultado": "lava", "descricao": "O calor derrete a rocha, formando lava.", "tags": ["vulcão"] },
+  { "a": "agua", "b": "terra", "resultado": "lama", "descricao": "Mistura básica de terra molhada.", "tags": ["natureza"] },
+  { "a": "agua", "b": "ar", "resultado": "chuva", "descricao": "A condensação cria gotas de chuva.", "tags": ["clima"] },
+  { "a": "terra", "b": "ar", "resultado": "poeira", "descricao": "Ar movimenta partículas de terra.", "tags": ["partículas"] },
+
+  { "a": "fogo", "b": "metal", "resultado": "espada", "descricao": "Metal aquecido pode ser moldado.", "tags": ["forja"] },
+  { "a": "fogo", "b": "areia", "resultado": "vidro", "descricao": "Areia derretida forma vidro.", "tags": ["material"] },
+  { "a": "areia", "b": "agua", "resultado": "barro", "descricao": "Areia úmida vira uma massa maleável.", "tags": ["terra"] },
+  { "a": "areia", "b": "ar", "resultado": "tempestade de areia", "descricao": "Vento forte levanta grãos de areia.", "tags": ["clima"] },
+  { "a": "areia", "b": "terra", "resultado": "deserto", "descricao": "Grandes áreas de areia formam desertos.", "tags": ["bioma"] },
+
+  { "a": "ar", "b": "energia", "resultado": "tornado", "descricao": "Energia intensa no ar cria tornados.", "tags": ["clima"] },
+  { "a": "agua", "b": "frio", "resultado": "gelo", "descricao": "A água congela em baixas temperaturas.", "tags": ["estado físico"] },
+  { "a": "agua", "b": "energia", "resultado": "eletricidade", "descricao": "A água pode conduzir energia.", "tags": ["ciência"] },
+
+  { "a": "terra", "b": "vida", "resultado": "planta", "descricao": "Vida germina no solo fértil.", "tags": ["biologia"] },
+  { "a": "agua", "b": "planta", "resultado": "crescimento", "descricao": "Plantas crescem com água.", "tags": ["biologia"] },
+  { "a": "ar", "b": "planta", "resultado": "oxigenio", "descricao": "Plantas produzem oxigênio.", "tags": ["fotosíntese"] },
+  { "a": "sol", "b": "planta", "resultado": "fotossintese", "descricao": "A planta converte luz em energia.", "tags": ["biologia"] },
+
+  { "a": "fogo", "b": "vida", "resultado": "fênix", "descricao": "A fusão cria uma criatura flamejante mítica.", "tags": ["mitologia"] },
+  { "a": "terra", "b": "vida", "resultado": "árvore", "descricao": "Uma planta evolui e cresce em árvore.", "tags": ["natureza"] },
+  { "a": "agua", "b": "vida", "resultado": "peixe", "descricao": "A vida evolui dentro da água.", "tags": ["animal"] },
+  { "a": "ar", "b": "vida", "resultado": "pássaro", "descricao": "A vida evolui para criatura alada.", "tags": ["animal"] },
+
+  { "a": "lava", "b": "agua", "resultado": "rocha", "descricao": "Lava resfriada se solidifica em pedra.", "tags": ["geologia"] },
+  { "a": "rocha", "b": "pressão", "resultado": "diamante", "descricao": "Alta pressão transforma carbono em diamante.", "tags": ["minerais"] },
+
+  { "a": "metal", "b": "agua", "resultado": "ferrugem", "descricao": "Oxidação do metal com água.", "tags": ["química"] },
+  { "a": "metal", "b": "energia", "resultado": "imã", "descricao": "Energia organiza partículas metálicas.", "tags": ["física"] },
+  { "a": "metal", "b": "terra", "resultado": "mina", "descricao": "Metal enterrado forma minas minerais.", "tags": ["geologia"] },
+
+  { "a": "ar", "b": "energia", "resultado": "raio", "descricao": "Descarga elétrica atmosférica.", "tags": ["clima"] },
+  { "a": "raio", "b": "areia", "resultado": "fulgurito", "descricao": "Raio vitrifica areia formando vidro natural.", "tags": ["geologia"] },
+
+  { "a": "planta", "b": "terra", "resultado": "raiz", "descricao": "Plantas se firmam no solo.", "tags": ["biologia"] },
+  { "a": "planta", "b": "energia", "resultado": "ervas mágicas", "descricao": "Energia altera propriedades naturais.", "tags": ["fantasia"] },
+
+  { "a": "pássaro", "b": "ar", "resultado": "voo", "descricao": "Asas utilizam ar para voar.", "tags": ["animal"] },
+  { "a": "peixe", "b": "agua", "resultado": "cardume", "descricao": "Peixes se agrupam em grandes números.", "tags": ["animal"] },
+
+  { "a": "terra", "b": "agua salgada", "resultado": "praia", "descricao": "Encontro da terra com o mar.", "tags": ["bioma"] },
+  { "a": "agua", "b": "energia", "resultado": "hidroeletricidade", "descricao": "Movimento da água gera energia.", "tags": ["ciência"] },
+  { "a": "fogo", "b": "energia", "resultado": "explosão", "descricao": "Energia intensa supera limites estruturais.", "tags": ["física"] },
+  { "a": "ar", "b": "frio", "resultado": "vento gelado", "descricao": "O ar resfria e se torna cortante.", "tags": ["clima"] },
+  { "a": "agua", "b": "vento", "resultado": "onda", "descricao": "O vento movimenta a superfície da água.", "tags": ["oceano"] },
+  { "a": "vida", "b": "energia", "resultado": "espírito", "descricao": "Vida combinada com energia gera essência espiritual.", "tags": ["fantasia"] },
+  { "a": "terra", "b": "pressão", "resultado": "montanha", "descricao": "Pressões tectônicas elevam terrenos.", "tags": ["geologia"] },
+  { "a": "lava", "b": "tempo", "resultado": "basalto", "descricao": "Lava se solidifica ao longo do tempo.", "tags": ["geologia"] },
+  { "a": "ar", "b": "som", "resultado": "eco", "descricao": "Ondas sonoras viajando pelo ar.", "tags": ["física"] },
+  { "a": "agua", "b": "som", "resultado": "borbulho", "descricao": "Ondas sonoras modificadas pela água.", "tags": ["física"] },
+  { "a": "terra", "b": "animal", "resultado": "toca", "descricao": "Animais escavam a terra.", "tags": ["natureza"] },
+  { "a": "planta", "b": "agua salgada", "resultado": "alga", "descricao": "Plantas adaptadas à água salgada.", "tags": ["biologia"] },
+  { "a": "ar", "b": "agua congelada", "resultado": "neve", "descricao": "Cristais de gelo formados no ar.", "tags": ["clima"] },
+  { "a": "gelo", "b": "terra", "resultado": "geleira", "descricao": "Acúmulo de gelo sobre o solo.", "tags": ["clima"] },
+  { "a": "vento", "b": "energia", "resultado": "furacão", "descricao": "Vento extremo energizado.", "tags": ["clima"] },
+  { "a": "chuva", "b": "sol", "resultado": "arco-íris", "descricao": "Luz refratada pelas gotículas.", "tags": ["clima"] },
+  { "a": "terra", "b": "sol", "resultado": "dia", "descricao": "Iluminação solar sobre o solo.", "tags": ["tempo"] },
+  { "a": "ar", "b": "lua", "resultado": "noite", "descricao": "Luz refletida da lua domina o céu noturno.", "tags": ["tempo"] }
+]

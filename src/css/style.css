@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
+/* Paleta */
 :root {
-    --primary-color: #8ab4f8; /* Cor primária (azul claro) */
-    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
-    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
-    --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+    --primary: #6A0DAD;
+    --white: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.82);
+    --shadow: 0 0 14px rgba(0,0,0,0.28);
+    --text: #222;
 }
 
-/* Corpo */
+/* Fundo */
 body {
-    background: url("../assets/images/laboratorio.png");
-    color: #333;
-    padding: 20px;
+  background: url("../assets/images/laboratorio.png") center/cover no-repeat fixed;
+  color: var(--text);
+  padding: 20px;
+  backdrop-filter: blur(3px);
 }
 
 /* Header */
@@ -28,26 +32,35 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 10px;
+    color: var(--primary);
 }
 
-/* Área principal */
+header p {
+    color: #f2f2f2;
+    font-size: 1rem;
+}
+
+/* Main */
 main {
-    max-width: 700px;
+    max-width: 750px;
     margin: 0 auto;
+    padding: 10px;
+    border-radius: 12px;
 }
 
 /* Inputs */
 .inputs {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    margin-bottom: 25px;
+    gap: 18px;
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+    backdrop-filter: blur(4px);
 }
 
 .input-box {
@@ -56,51 +69,56 @@ main {
 }
 
 label {
-    font-weight: bold;
-    margin-bottom: 5px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--primary);
 }
 
 select {
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #aaa;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
     font-size: 1rem;
+    background: #fafafa;
 }
 
 /* Botão */
 button {
     padding: 12px;
-    background: #4a7df2;
+    background: var(--primary);
     color: white;
     border: none;
-    font-size: 1rem;
-    border-radius: 6px;
+    font-size: 1.1rem;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.25s;
 }
 
 button:hover {
-    background: #2d5fd4;
+    filter: brightness(1.15);
 }
 
 /* Resultado */
 .resultado {
-    min-height: 120px;
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
+    min-height: 150px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(4px);
     text-align: center;
+    font-size: 1.3rem;
+    color: var(--text);
 }
 
 /* Footer */
 footer {
-    margin-top: 40px;
+    margin-top: 35px;
     text-align: center;
-    color: #777;
+    padding: 15px;
+    background: var(--card-bg);
+    border-radius: 10px;
     font-size: 0.9rem;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(4px);
 }
