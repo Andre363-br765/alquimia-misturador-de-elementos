@@ -1,20 +1,11 @@
+/* Responsivo */
 @media (max-width: 1024px) {
     main {
         max-width: 850px;
     }
-}
-
-@media (max-width: 480px) {
-    main {
-        padding: 20px;
-        gap: 15px;
-    }
-    .card {
-        width: 100%;
-        font-size: 0.9rem;
-    }
-    body {
-        background-size: cover; /* Sempre cobre sem distorção */
+    .inputs {
+        gap: 20px;
+        padding: 30px;
     }
 }
 
@@ -22,7 +13,21 @@
     main {
         max-width: 90%;
     }
-    .card {
-        width: 80%;
+    .inputs {
+        gap: 18px;
+        padding: 25px;
+    }
+    select, button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+    }
+    select, button {
+        font-size: 0.95rem;
+        padding: 12px;
     }
 }

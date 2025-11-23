@@ -11,55 +11,68 @@
 /* Paleta */
 :root {
     --primary: #6A0DAD;
-    --white: #ffffff;
-    --card-bg: rgba(255, 255, 255, 0.82);
+    /* --white: #ffffff; */
+    --card-bg: rgba(255, 255, 255, 0.88);
     --shadow: 0 0 14px rgba(0,0,0,0.28);
     --text: #222;
 }
 
-/* Fundo */
+/* Fundo com overlay */
 body {
-  background: url("../assets/images/laboratorio.png") center/cover no-repeat fixed;
-  color: var(--text);
-  padding: 20px;
-  backdrop-filter: blur(3px);
+    position: relative;
+    background: url("../assets/images/laboratorio.png") center/cover no-repeat fixed;
+    color: var(--text);
+    padding: 20px;
+}
+
+/* Fundo com overlay mais leve */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.12); /* mais leve que 0.25 */
+    z-index: 0;
 }
 
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
     color: var(--primary);
 }
 
 header p {
     color: #f2f2f2;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 /* Main */
 main {
-    max-width: 750px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
     border-radius: 12px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Inputs */
 .inputs {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 25px; /* maior respiro entre inputs */
     background: var(--card-bg);
-    padding: 25px;
+    padding: 35px; /* mais espaço interno */
     border-radius: 12px;
     box-shadow: var(--shadow);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     backdrop-filter: blur(4px);
 }
 
@@ -70,25 +83,25 @@ main {
 
 label {
     font-weight: 700;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     color: var(--primary);
 }
 
 select {
-    padding: 12px;
+    padding: 14px;
     border-radius: 8px;
     border: 1px solid #bbb;
-    font-size: 1rem;
+    font-size: 1.1rem;
     background: #fafafa;
 }
 
 /* Botão */
 button {
-    padding: 12px;
+    padding: 14px 22px;
     background: var(--primary);
     color: white;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.25s;
@@ -100,25 +113,27 @@ button:hover {
 
 /* Resultado */
 .resultado {
-    min-height: 150px;
+    min-height: 180px; /* um pouco maior */
     background: var(--card-bg);
     border-radius: 12px;
-    padding: 25px;
+    padding: 30px;
     box-shadow: var(--shadow);
     backdrop-filter: blur(4px);
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     color: var(--text);
 }
 
 /* Footer */
 footer {
-    margin-top: 35px;
+    margin-top: 50px;
     text-align: center;
-    padding: 15px;
-    background: var(--card-bg);
-    border-radius: 10px;
-    font-size: 0.9rem;
+    padding: 20px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    font-size: 1rem;
     box-shadow: var(--shadow);
     backdrop-filter: blur(4px);
+    position: relative;
+    z-index: 1;
 }
