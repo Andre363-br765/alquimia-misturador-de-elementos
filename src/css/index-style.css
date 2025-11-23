@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Paleta */
+:root {
+  --primary: #6A0DAD;
+  --white: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.82);
+  --shadow: 0 0 14px rgba(0,0,0,0.28);
+  --text: #222;
+}
+
+/* Fundo geral */
+body {
+  background: url("../assets/images/laboratorio.png") center/cover no-repeat fixed;
+  color: var(--text);
+  padding: 20px;
+  backdrop-filter: blur(3px);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+header p {
+  color: #f2f2f2;
+  font-size: 1rem;
+}
+
+/* Main */
+main {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* Inputs e Resultados */
+.inputs, .resultado, footer {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(4px);
+  padding: 25px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--primary);
+}
+
+select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+  background: #fafafa;
+}
+
+button {
+  padding: 12px;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  filter: brightness(1.15);
+}
+
+.resultado {
+  min-height: 150px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+/* Footer */
+footer {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+
+/* Mobile First: menores telas primeiro */
+@media (max-width: 480px) {
+  body {
+    background-size: cover; /* Sempre cobre sem distorção */
+  }
+
+  main {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 90%;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    max-width: 850px;
+  }
+}

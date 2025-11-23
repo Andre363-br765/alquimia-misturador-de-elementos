@@ -1,63 +1,842 @@
 [
-  { "a": "fogo", "b": "agua", "resultado": "vapor", "descricao": "A água evapora com calor intenso.", "tags": ["calor", "transformação"] },
-  { "a": "fogo", "b": "ar", "resultado": "energia", "descricao": "Ar quente em movimento cria energia.", "tags": ["energia"] },
-  { "a": "fogo", "b": "terra", "resultado": "lava", "descricao": "O calor derrete a rocha, formando lava.", "tags": ["vulcão"] },
-  { "a": "agua", "b": "terra", "resultado": "lama", "descricao": "Mistura básica de terra molhada.", "tags": ["natureza"] },
-  { "a": "agua", "b": "ar", "resultado": "chuva", "descricao": "A condensação cria gotas de chuva.", "tags": ["clima"] },
-  { "a": "terra", "b": "ar", "resultado": "poeira", "descricao": "Ar movimenta partículas de terra.", "tags": ["partículas"] },
-
-  { "a": "fogo", "b": "metal", "resultado": "espada", "descricao": "Metal aquecido pode ser moldado.", "tags": ["forja"] },
-  { "a": "fogo", "b": "areia", "resultado": "vidro", "descricao": "Areia derretida forma vidro.", "tags": ["material"] },
-  { "a": "areia", "b": "agua", "resultado": "barro", "descricao": "Areia úmida vira uma massa maleável.", "tags": ["terra"] },
-  { "a": "areia", "b": "ar", "resultado": "tempestade de areia", "descricao": "Vento forte levanta grãos de areia.", "tags": ["clima"] },
-  { "a": "areia", "b": "terra", "resultado": "deserto", "descricao": "Grandes áreas de areia formam desertos.", "tags": ["bioma"] },
-
-  { "a": "ar", "b": "energia", "resultado": "tornado", "descricao": "Energia intensa no ar cria tornados.", "tags": ["clima"] },
-  { "a": "agua", "b": "frio", "resultado": "gelo", "descricao": "A água congela em baixas temperaturas.", "tags": ["estado físico"] },
-  { "a": "agua", "b": "energia", "resultado": "eletricidade", "descricao": "A água pode conduzir energia.", "tags": ["ciência"] },
-
-  { "a": "terra", "b": "vida", "resultado": "planta", "descricao": "Vida germina no solo fértil.", "tags": ["biologia"] },
-  { "a": "agua", "b": "planta", "resultado": "crescimento", "descricao": "Plantas crescem com água.", "tags": ["biologia"] },
-  { "a": "ar", "b": "planta", "resultado": "oxigenio", "descricao": "Plantas produzem oxigênio.", "tags": ["fotosíntese"] },
-  { "a": "sol", "b": "planta", "resultado": "fotossintese", "descricao": "A planta converte luz em energia.", "tags": ["biologia"] },
-
-  { "a": "fogo", "b": "vida", "resultado": "fênix", "descricao": "A fusão cria uma criatura flamejante mítica.", "tags": ["mitologia"] },
-  { "a": "terra", "b": "vida", "resultado": "árvore", "descricao": "Uma planta evolui e cresce em árvore.", "tags": ["natureza"] },
-  { "a": "agua", "b": "vida", "resultado": "peixe", "descricao": "A vida evolui dentro da água.", "tags": ["animal"] },
-  { "a": "ar", "b": "vida", "resultado": "pássaro", "descricao": "A vida evolui para criatura alada.", "tags": ["animal"] },
-
-  { "a": "lava", "b": "agua", "resultado": "rocha", "descricao": "Lava resfriada se solidifica em pedra.", "tags": ["geologia"] },
-  { "a": "rocha", "b": "pressão", "resultado": "diamante", "descricao": "Alta pressão transforma carbono em diamante.", "tags": ["minerais"] },
-
-  { "a": "metal", "b": "agua", "resultado": "ferrugem", "descricao": "Oxidação do metal com água.", "tags": ["química"] },
-  { "a": "metal", "b": "energia", "resultado": "imã", "descricao": "Energia organiza partículas metálicas.", "tags": ["física"] },
-  { "a": "metal", "b": "terra", "resultado": "mina", "descricao": "Metal enterrado forma minas minerais.", "tags": ["geologia"] },
-
-  { "a": "ar", "b": "energia", "resultado": "raio", "descricao": "Descarga elétrica atmosférica.", "tags": ["clima"] },
-  { "a": "raio", "b": "areia", "resultado": "fulgurito", "descricao": "Raio vitrifica areia formando vidro natural.", "tags": ["geologia"] },
-
-  { "a": "planta", "b": "terra", "resultado": "raiz", "descricao": "Plantas se firmam no solo.", "tags": ["biologia"] },
-  { "a": "planta", "b": "energia", "resultado": "ervas mágicas", "descricao": "Energia altera propriedades naturais.", "tags": ["fantasia"] },
-
-  { "a": "pássaro", "b": "ar", "resultado": "voo", "descricao": "Asas utilizam ar para voar.", "tags": ["animal"] },
-  { "a": "peixe", "b": "agua", "resultado": "cardume", "descricao": "Peixes se agrupam em grandes números.", "tags": ["animal"] },
-
-  { "a": "terra", "b": "agua salgada", "resultado": "praia", "descricao": "Encontro da terra com o mar.", "tags": ["bioma"] },
-  { "a": "agua", "b": "energia", "resultado": "hidroeletricidade", "descricao": "Movimento da água gera energia.", "tags": ["ciência"] },
-  { "a": "fogo", "b": "energia", "resultado": "explosão", "descricao": "Energia intensa supera limites estruturais.", "tags": ["física"] },
-  { "a": "ar", "b": "frio", "resultado": "vento gelado", "descricao": "O ar resfria e se torna cortante.", "tags": ["clima"] },
-  { "a": "agua", "b": "vento", "resultado": "onda", "descricao": "O vento movimenta a superfície da água.", "tags": ["oceano"] },
-  { "a": "vida", "b": "energia", "resultado": "espírito", "descricao": "Vida combinada com energia gera essência espiritual.", "tags": ["fantasia"] },
-  { "a": "terra", "b": "pressão", "resultado": "montanha", "descricao": "Pressões tectônicas elevam terrenos.", "tags": ["geologia"] },
-  { "a": "lava", "b": "tempo", "resultado": "basalto", "descricao": "Lava se solidifica ao longo do tempo.", "tags": ["geologia"] },
-  { "a": "ar", "b": "som", "resultado": "eco", "descricao": "Ondas sonoras viajando pelo ar.", "tags": ["física"] },
-  { "a": "agua", "b": "som", "resultado": "borbulho", "descricao": "Ondas sonoras modificadas pela água.", "tags": ["física"] },
-  { "a": "terra", "b": "animal", "resultado": "toca", "descricao": "Animais escavam a terra.", "tags": ["natureza"] },
-  { "a": "planta", "b": "agua salgada", "resultado": "alga", "descricao": "Plantas adaptadas à água salgada.", "tags": ["biologia"] },
-  { "a": "ar", "b": "agua congelada", "resultado": "neve", "descricao": "Cristais de gelo formados no ar.", "tags": ["clima"] },
-  { "a": "gelo", "b": "terra", "resultado": "geleira", "descricao": "Acúmulo de gelo sobre o solo.", "tags": ["clima"] },
-  { "a": "vento", "b": "energia", "resultado": "furacão", "descricao": "Vento extremo energizado.", "tags": ["clima"] },
-  { "a": "chuva", "b": "sol", "resultado": "arco-íris", "descricao": "Luz refratada pelas gotículas.", "tags": ["clima"] },
-  { "a": "terra", "b": "sol", "resultado": "dia", "descricao": "Iluminação solar sobre o solo.", "tags": ["tempo"] },
-  { "a": "ar", "b": "lua", "resultado": "noite", "descricao": "Luz refletida da lua domina o céu noturno.", "tags": ["tempo"] }
+    {
+        "a": "🔥 fogo",
+        "b": "💧 agua",
+        "resultado": "🌫️ vapor",
+        "descricao": "A água evapora rapidamente quando entra em contato com o fogo.",
+        "tags": ["transformacao", "calor"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "🪨 terra",
+        "resultado": "🌋 lava",
+        "descricao": "O fogo derrete a terra formando lava.",
+        "tags": ["geologia"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "💨 ar",
+        "resultado": "🔥🔥 chamas intensas",
+        "descricao": "O ar alimenta o fogo, aumentando sua força.",
+        "tags": ["calor"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "⚙️ metal",
+        "resultado": "🔩 metal fundido",
+        "descricao": "O metal derrete com o calor intenso.",
+        "tags": ["forja"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "⚡ energia",
+        "resultado": "💥 explosao",
+        "descricao": "Energia combinada ao fogo gera uma explosão violenta.",
+        "tags": ["fisica"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "🌿 planta",
+        "resultado": "🌑 cinzas",
+        "descricao": "As plantas queimam completamente, virando cinzas.",
+        "tags": ["combustao"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "🐾 animal",
+        "resultado": "⚰️ ossos",
+        "descricao": "O calor extremo queima a matéria orgânica.",
+        "tags": ["natureza"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "🗿 pedra",
+        "resultado": "🪨 pedra aquecida",
+        "descricao": "O fogo aquece a pedra, tornando-a incandescente.",
+        "tags": ["geologia"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "♨️ calor",
+        "resultado": "🔥🔥 super-fogo",
+        "descricao": "Calor somado ao fogo cria chamas ainda mais intensas.",
+        "tags": ["calor"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "❄️ frio",
+        "resultado": "💥 choque termico",
+        "descricao": "Calor e frio extremo se anulam violentamente.",
+        "tags": ["fisica"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "🔌 eletricidade",
+        "resultado": "⚡🔥 raio flamejante",
+        "descricao": "A eletricidade passa através das chamas criando energia instável.",
+        "tags": ["eletricidade", "energia"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "✨ luz",
+        "resultado": "🔆 brilho intenso",
+        "descricao": "A luz intensifica o brilho e a cor das chamas.",
+        "tags": ["luz"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "🌑 escuridao",
+        "resultado": "🜂 fogo sombrio",
+        "descricao": "Fogo corrompido pela escuridão se torna chamas negras.",
+        "tags": ["fantasia"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "🌬️ vento",
+        "resultado": "🔥🔥🔥 incendio",
+        "descricao": "O vento espalha e intensifica o fogo rapidamente.",
+        "tags": ["clima"]
+    },
+    {
+        "a": "🔥 fogo",
+        "b": "❤️ vida",
+        "resultado": "🐉 salamandra",
+        "descricao": "Lendas dizem que criaturas vivas podem nascer das chamas.",
+        "tags": ["mitologia"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "🪨 terra",
+        "resultado": "🪣 lama",
+        "descricao": "A água transforma a terra em uma massa úmida e pastosa.",
+        "tags": ["natureza", "mistura"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "💨 ar",
+        "resultado": "🌧️ chuva",
+        "descricao": "A interação entre água e ar forma gotículas que caem como chuva.",
+        "tags": ["clima"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "⚙️ metal",
+        "resultado": "🟤 ferrugem",
+        "descricao": "O contato com água oxida o metal com o tempo.",
+        "tags": ["quimica"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "⚡ energia",
+        "resultado": "🔌 condução",
+        "descricao": "A água conduz energia com facilidade, permitindo passagens elétricas.",
+        "tags": ["eletricidade", "fisica"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "🌿 planta",
+        "resultado": "🌱 broto",
+        "descricao": "A planta se nutre da água e começa a crescer.",
+        "tags": ["vida", "biologia"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "🐾 animal",
+        "resultado": "🐟 peixe",
+        "descricao": "A vida animal se adapta e evolui dentro da água.",
+        "tags": ["animal", "evolucao"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "🗿 pedra",
+        "resultado": "🧱 pedra molhada",
+        "descricao": "A pedra fica saturada de água, tornando-se escorregadia.",
+        "tags": ["geologia"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "♨️ calor",
+        "resultado": "🌫️ vapor",
+        "descricao": "O calor transforma água em vapor rapidamente.",
+        "tags": ["transformacao", "fisica"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "❄️ frio",
+        "resultado": "🧊 gelo",
+        "descricao": "O frio congela a água e forma gelo sólido.",
+        "tags": ["clima", "estado-fisico"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "🔌 eletricidade",
+        "resultado": "⚡ choque eletrico",
+        "descricao": "A eletricidade se espalha através da água.",
+        "tags": ["eletricidade"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "✨ luz",
+        "resultado": "🌈 arco-iris",
+        "descricao": "A luz refratada pela água cria um arco colorido.",
+        "tags": ["luz", "clima"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "🌑 escuridao",
+        "resultado": "💧💀 agua sombria",
+        "descricao": "A escuridão corrompe a água e muda sua essência.",
+        "tags": ["fantasia"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "🌬️ vento",
+        "resultado": "🌊 onda",
+        "descricao": "O vento movimenta a superfície da água, formando ondas.",
+        "tags": ["oceano", "clima"]
+    },
+    {
+        "a": "💧 agua",
+        "b": "❤️ vida",
+        "resultado": "🧬 celula",
+        "descricao": "A água participa da origem da vida, formando estruturas biológicas básicas.",
+        "tags": ["vida", "biologia"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "💨 ar",
+        "resultado": "🌫️ poeira",
+        "descricao": "O ar levanta partículas de terra.",
+        "tags": ["clima", "particulas"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "⚙️ metal",
+        "resultado": "⛏️ minério",
+        "descricao": "O metal enterrado se torna minério bruto.",
+        "tags": ["geologia", "mineracao"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "⚡ energia",
+        "resultado": "🌋 atividade geotérmica",
+        "descricao": "A energia aquece o subsolo criando instabilidade.",
+        "tags": ["geologia", "energia"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "🌿 planta",
+        "resultado": "🌱 raiz",
+        "descricao": "As plantas se fixam profundamente na terra.",
+        "tags": ["biologia", "natureza"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "🐾 animal",
+        "resultado": "🕳️ toca",
+        "descricao": "Animais escavam a terra criando abrigos.",
+        "tags": ["natureza", "animal"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "🗿 pedra",
+        "resultado": "⛰️ montanha",
+        "descricao": "Acúmulo maciço de terra e pedra forma uma montanha.",
+        "tags": ["geologia", "formacao"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "♨️ calor",
+        "resultado": "🧱 barro seco",
+        "descricao": "O calor endurece o barro criado pela terra.",
+        "tags": ["material", "secagem"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "❄️ frio",
+        "resultado": "🧊 solo congelado",
+        "descricao": "Temperaturas extremas congelam o solo.",
+        "tags": ["clima", "geologia"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "🔌 eletricidade",
+        "resultado": "⚡ cristal energizado",
+        "descricao": "A eletricidade cristaliza minerais presentes no solo.",
+        "tags": ["energia", "cristal"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "✨ luz",
+        "resultado": "💎 cristal brilhante",
+        "descricao": "A luz purifica minerais criando cristais luminosos.",
+        "tags": ["cristal", "luz"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "🌑 escuridao",
+        "resultado": "🪦 solo sombrio",
+        "descricao": "A escuridão corrompe a terra, deixando-a densa e pesada.",
+        "tags": ["fantasia", "sombra"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "🌬️ vento",
+        "resultado": "🏜️ deserto",
+        "descricao": "O vento constante desgasta a terra e cria dunas.",
+        "tags": ["bioma", "clima"]
+    },
+    {
+        "a": "🪨 terra",
+        "b": "❤️ vida",
+        "resultado": "🌳 arvore",
+        "descricao": "A vida faz a terra gerar vegetação forte e antiga.",
+        "tags": ["biologia", "natureza"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "⚙️ metal",
+        "resultado": "🛠️ erosão metálica",
+        "descricao": "O vento desgasta lentamente superfícies metálicas.",
+        "tags": ["corrosao", "tempo"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "⚡ energia",
+        "resultado": "🌪️ tornado",
+        "descricao": "A energia agita o ar e cria um tornado poderoso.",
+        "tags": ["clima", "forca"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "🌿 planta",
+        "resultado": "🍃 folhas ao vento",
+        "descricao": "O vento espalha folhas e sementes pela natureza.",
+        "tags": ["natureza", "movimento"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "🐾 animal",
+        "resultado": "🪽 voo",
+        "descricao": "O ar permite que criaturas aladas se mantenham no céu.",
+        "tags": ["animal", "movimento"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "🗿 pedra",
+        "resultado": "🌫️ poeira",
+        "descricao": "O vento levanta partículas de pedra e terra.",
+        "tags": ["clima", "particulas"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "♨️ calor",
+        "resultado": "🔥 ar quente",
+        "descricao": "O ar aquecido sobe rapidamente, alterando o clima.",
+        "tags": ["clima", "temperatura"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "❄️ frio",
+        "resultado": "💨 ar gelado",
+        "descricao": "O ar resfria e se torna cortante.",
+        "tags": ["clima", "inverno"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "🔌 eletricidade",
+        "resultado": "⚡ raio",
+        "descricao": "A eletricidade no ar cria descargas violentas.",
+        "tags": ["eletricidade", "clima"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "✨ luz",
+        "resultado": "🌈 halo luminoso",
+        "descricao": "A luz atravessando o ar cria efeitos ópticos mágicos.",
+        "tags": ["luz", "optica"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "🌑 escuridao",
+        "resultado": "🌫️ neblina sombria",
+        "descricao": "O ar mistura-se com escuridão e forma névoa pesada.",
+        "tags": ["fantasia", "sombra"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "🌬️ vento",
+        "resultado": "💨💨 correnteza de ar",
+        "descricao": "Dois fluxos de vento se unem e criam uma corrente poderosa.",
+        "tags": ["clima", "vento"]
+    },
+    {
+        "a": "💨 ar",
+        "b": "❤️ vida",
+        "resultado": "😮 respiração",
+        "descricao": "A vida depende do ar para respirar.",
+        "tags": ["biologia", "vida"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "🌿 planta",
+        "resultado": "🪓 ferramenta",
+        "descricao": "A planta vira cabo e o metal se torna lâmina.",
+        "tags": ["forja", "construcao"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "🗿 pedra",
+        "resultado": "⛏️ picareta",
+        "descricao": "Pedra como base e metal como lâmina formam uma ferramenta.",
+        "tags": ["mineração", "ferramenta"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "❄️ frio",
+        "resultado": "⚙️ metal frágil",
+        "descricao": "O frio intenso faz o metal ficar quebradiço.",
+        "tags": ["clima", "fisica"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "✨ luz",
+        "resultado": "🔆 reflexo",
+        "descricao": "A luz reflete na superfície metálica.",
+        "tags": ["luz"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "🌬️ vento",
+        "resultado": "🔩 som metálico",
+        "descricao": "O vento vibra através do metal, criando som.",
+        "tags": ["som", "fisica"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "⚡ energia",
+        "resultado": "🧲 imã",
+        "descricao": "A energia reorganiza o metal, criando magnetismo.",
+        "tags": ["fisica", "magnetismo"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "🐾 animal",
+        "resultado": "🤖 criatura mecânica",
+        "descricao": "O metal se une ao animal formando um ser mecânico.",
+        "tags": ["tecnologia", "fantasia"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "♨️ calor",
+        "resultado": "🔩 metal derretido",
+        "descricao": "O calor extremo deixa o metal em estado líquido.",
+        "tags": ["forja", "calor"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "🔌 eletricidade",
+        "resultado": "⚡ condução elétrica",
+        "descricao": "O metal conduz eletricidade com facilidade.",
+        "tags": ["eletricidade", "fisica"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "🌑 escuridao",
+        "resultado": "⚫ metal opaco",
+        "descricao": "A escuridão reduz o brilho natural do metal.",
+        "tags": ["fantasia"]
+    },
+    {
+        "a": "⚙️ metal",
+        "b": "❤️ vida",
+        "resultado": "🦾 prótese viva",
+        "descricao": "O metal se adapta à vida formando uma prótese biotecnológica.",
+        "tags": ["vida", "tecnologia"]
+    },
+    {
+        "a": "⚡ energia",
+        "b": "🌿 planta",
+        "resultado": "🌱 bioenergia",
+        "descricao": "A energia flui pela planta, aumentando sua vitalidade.",
+        "tags": ["biologia", "energia"]
+    },
+    {
+        "a": "⚡ energia",
+        "b": "🐾 animal",
+        "resultado": "🐺 criatura energética",
+        "descricao": "A energia transforma o animal em um ser hiperativo e brilhante.",
+        "tags": ["fantasia", "animal"]
+    },
+    {
+        "a": "⚡ energia",
+        "b": "🗿 pedra",
+        "resultado": "🧱 pedra energizada",
+        "descricao": "A pedra começa a vibrar, carregada com pura energia.",
+        "tags": ["geologia", "energia"]
+    },
+    {
+        "a": "⚡ energia",
+        "b": "♨️ calor",
+        "resultado": "🔥 aquecimento extremo",
+        "descricao": "A energia intensifica o calor até níveis perigosos.",
+        "tags": ["fisica", "calor"]
+    },
+    {
+        "a": "⚡ energia",
+        "b": "❄️ frio",
+        "resultado": "🧊 congelamento instantâneo",
+        "descricao": "A energia reorganiza moléculas e turbina o frio.",
+        "tags": ["clima", "fisica"]
+    },
+    {
+        "a": "⚡ energia",
+        "b": "🔌 eletricidade",
+        "resultado": "⚡⚡ supercarga",
+        "descricao": "A fusão cria um pico elétrico extremamente poderoso.",
+        "tags": ["eletricidade", "energia"]
+    },
+    {
+        "a": "⚡ energia",
+        "b": "✨ luz",
+        "resultado": "🔆 luz intensa",
+        "descricao": "A energia amplifica o brilho até seu limite.",
+        "tags": ["luz"]
+    },
+    {
+        "a": "⚡ energia",
+        "b": "🌑 escuridao",
+        "resultado": "🕳️ brecha sombria",
+        "descricao": "A energia distorce a escuridão criando uma fenda misteriosa.",
+        "tags": ["fantasia", "escuridao"]
+    },
+    {
+        "a": "⚡ energia",
+        "b": "🌬️ vento",
+        "resultado": "🌪️ tempestade energética",
+        "descricao": "O vento absorve energia e se torna um mini furacão.",
+        "tags": ["clima"]
+    },
+    {
+        "a": "⚡ energia",
+        "b": "❤️ vida",
+        "resultado": "👁️‍🗨️ espírito vital",
+        "descricao": "A energia desperta a essência mais pura da vida.",
+        "tags": ["fantasia", "vida"]
+    },
+    {
+        "a": "🌿 planta",
+        "b": "🐾 animal",
+        "resultado": "🍃 ervas medicinais",
+        "descricao": "O contato com seres vivos faz a planta desenvolver propriedades curativas.",
+        "tags": ["natureza", "biologia"]
+    },
+    {
+        "a": "🌿 planta",
+        "b": "🗿 pedra",
+        "resultado": "🌱 musgo",
+        "descricao": "Plantas pequenas começam a crescer sobre a pedra.",
+        "tags": ["natureza"]
+    },
+    {
+        "a": "🌿 planta",
+        "b": "♨️ calor",
+        "resultado": "🌾 planta seca",
+        "descricao": "O calor intenso remove a umidade e resseca a planta.",
+        "tags": ["clima"]
+    },
+    {
+        "a": "🌿 planta",
+        "b": "❄️ frio",
+        "resultado": "🥀 planta congelada",
+        "descricao": "O frio extremo congela a estrutura da planta.",
+        "tags": ["clima"]
+    },
+    {
+        "a": "🌿 planta",
+        "b": "🔌 eletricidade",
+        "resultado": "⚡ erva eletrica",
+        "descricao": "A eletricidade altera a planta, criando propriedades energéticas.",
+        "tags": ["fantasia", "energia"]
+    },
+    {
+        "a": "🌿 planta",
+        "b": "✨ luz",
+        "resultado": "🌻 flor luminosa",
+        "descricao": "A luz faz a planta florescer em brilho próprio.",
+        "tags": ["luz", "vida"]
+    },
+    {
+        "a": "🌿 planta",
+        "b": "🌑 escuridao",
+        "resultado": "🌑 flor sombria",
+        "descricao": "A planta absorve a escuridão e muda sua essência.",
+        "tags": ["fantasia"]
+    },
+    {
+        "a": "🌿 planta",
+        "b": "🌬️ vento",
+        "resultado": "🍃 folhas ao vento",
+        "descricao": "A planta se espalha através das correntes de vento.",
+        "tags": ["clima"]
+    },
+    {
+        "a": "🌿 planta",
+        "b": "❤️ vida",
+        "resultado": "🌳 arvore",
+        "descricao": "A energia vital faz a planta evoluir e se tornar uma árvore.",
+        "tags": ["biologia", "evolucao"]
+    },
+    {
+        "a": "🐾 animal",
+        "b": "🗿 pedra",
+        "resultado": "🦴 fóssil",
+        "descricao": "Com o tempo, restos de animais se transformam em fósseis dentro da pedra.",
+        "tags": ["natureza", "tempo", "geologia"]
+    },
+    {
+        "a": "🐾 animal",
+        "b": "♨️ calor",
+        "resultado": "😓 exaustao",
+        "descricao": "O calor extremo deixa o animal fraco e sem energia.",
+        "tags": ["clima"]
+    },
+    {
+        "a": "🐾 animal",
+        "b": "❄️ frio",
+        "resultado": "🐾❄️ animal congelado",
+        "descricao": "O frio intenso congela o organismo do animal.",
+        "tags": ["clima"]
+    },
+    {
+        "a": "🐾 animal",
+        "b": "🔌 eletricidade",
+        "resultado": "🦔⚡ animal eletrico",
+        "descricao": "A eletricidade altera o corpo do animal, tornando-o energizado.",
+        "tags": ["energia", "fantasia"]
+    },
+    {
+        "a": "🐾 animal",
+        "b": "✨ luz",
+        "resultado": "🪽 criatura luminosa",
+        "descricao": "O animal absorve luz e passa a emitir brilho próprio.",
+        "tags": ["fantasia", "luz"]
+    },
+    {
+        "a": "🐾 animal",
+        "b": "🌑 escuridao",
+        "resultado": "👁️‍🗨️ criatura sombria",
+        "descricao": "A escuridão transforma o animal em uma entidade misteriosa.",
+        "tags": ["fantasia", "sombra"]
+    },
+    {
+        "a": "🐾 animal",
+        "b": "🌬️ vento",
+        "resultado": "🪽 animal alado",
+        "descricao": "O vento concede leveza e mobilidade, permitindo ao animal voar.",
+        "tags": ["evolucao", "ar"]
+    },
+    {
+        "a": "🐾 animal",
+        "b": "❤️ vida",
+        "resultado": "🧍 humano",
+        "descricao": "A essência da vida evolui o animal em um ser humano.",
+        "tags": ["evolucao"]
+    },
+    {
+        "a": "🗿 pedra",
+        "b": "♨️ calor",
+        "resultado": "🧱 tijolo",
+        "descricao": "O calor intenso endurece a pedra em forma moldável.",
+        "tags": ["construcao", "material"]
+    },
+    {
+        "a": "🗿 pedra",
+        "b": "❄️ frio",
+        "resultado": "❄️🗿 pedra quebradiça",
+        "descricao": "O frio extremo fragiliza a pedra, tornando-a fácil de rachar.",
+        "tags": ["clima", "material"]
+    },
+    {
+        "a": "🗿 pedra",
+        "b": "🔌 eletricidade",
+        "resultado": "⚡🪨 pedra eletrificada",
+        "descricao": "A eletricidade corre pela pedra, armazenando energia.",
+        "tags": ["energia", "fantasia"]
+    },
+    {
+        "a": "🗿 pedra",
+        "b": "✨ luz",
+        "resultado": "💎 cristal luminoso",
+        "descricao": "A luz purifica a pedra, tornando-a cristalina e brilhante.",
+        "tags": ["magico", "luz"]
+    },
+    {
+        "a": "🗿 pedra",
+        "b": "🌑 escuridao",
+        "resultado": "🪨🌑 pedra sombria",
+        "descricao": "A pedra absorve a escuridão e torna-se totalmente negra.",
+        "tags": ["sombra", "fantasia"]
+    },
+    {
+        "a": "🗿 pedra",
+        "b": "🌬️ vento",
+        "resultado": "🪨💨 pedra erodida",
+        "descricao": "O vento desgasta a pedra lentamente, mudando sua forma.",
+        "tags": ["erosao", "clima"]
+    },
+    {
+        "a": "🗿 pedra",
+        "b": "❤️ vida",
+        "resultado": "🪨🫀 golem",
+        "descricao": "A vida infunde energia na pedra, criando um ser animado.",
+        "tags": ["criatura", "fantasia"]
+    },
+    {
+        "a": "♨️ calor",
+        "b": "❄️ frio",
+        "resultado": "💥 choque térmico",
+        "descricao": "A colisão entre calor e frio gera uma reação violenta.",
+        "tags": ["fisica", "termica"]
+    },
+    {
+        "a": "♨️ calor",
+        "b": "🔌 eletricidade",
+        "resultado": "⚡ superaquecimento",
+        "descricao": "O calor intensifica a corrente elétrica até níveis perigosos.",
+        "tags": ["eletricidade", "energia"]
+    },
+    {
+        "a": "♨️ calor",
+        "b": "✨ luz",
+        "resultado": "🔆 brilho incandescente",
+        "descricao": "O calor extremo faz a luz brilhar ainda mais forte.",
+        "tags": ["luz"]
+    },
+    {
+        "a": "♨️ calor",
+        "b": "🌑 escuridao",
+        "resultado": "🌫️ penumbra quente",
+        "descricao": "A escuridão absorve o calor, criando uma névoa pesada.",
+        "tags": ["fantasia", "contraste"]
+    },
+    {
+        "a": "♨️ calor",
+        "b": "🌬️ vento",
+        "resultado": "🔥 rajada quente",
+        "descricao": "O vento espalha o calor em uma corrente abrasadora.",
+        "tags": ["clima"]
+    },
+    {
+        "a": "♨️ calor",
+        "b": "❤️ vida",
+        "resultado": "🔥 vitalidade ardente",
+        "descricao": "O calor impulsiona a energia vital, criando força intensa.",
+        "tags": ["vida", "energia"]
+    },
+    {
+        "a": "❄️ frio",
+        "b": "🔌 eletricidade",
+        "resultado": "⚡⚡ tempestade gelada",
+        "descricao": "Eletricidade em contato com frio extremo cria tempestade.",
+        "tags": ["clima", "energia"]
+    },
+    {
+        "a": "❄️ frio",
+        "b": "✨ luz",
+        "resultado": "❄️✨ cristais brilhantes",
+        "descricao": "A luz reflete no gelo formando cristais reluzentes.",
+        "tags": ["clima", "luz"]
+    },
+    {
+        "a": "❄️ frio",
+        "b": "🌑 escuridao",
+        "resultado": "🌌 nevasca sombria",
+        "descricao": "O frio e a escuridão criam uma nevasca misteriosa.",
+        "tags": ["clima", "fantasia"]
+    },
+    {
+        "a": "❄️ frio",
+        "b": "🌬️ vento",
+        "resultado": "🌪️ ventania gelada",
+        "descricao": "O vento forte aumenta a sensação de frio.",
+        "tags": ["clima", "vento"]
+    },
+    {
+        "a": "❄️ frio",
+        "b": "❤️ vida",
+        "resultado": "💀 crianca congelada",
+        "descricao": "A vida sofre com frio extremo.",
+        "tags": ["perigo", "natureza"]
+    },
+    {
+        "a": "🔌 eletricidade",
+        "b": "✨ luz",
+        "resultado": "⚡ luz elétrica",
+        "descricao": "A eletricidade intensifica a luz.",
+        "tags": ["energia", "luz"]
+    },
+    {
+        "a": "🔌 eletricidade",
+        "b": "🌑 escuridao",
+        "resultado": "🌩️ relâmpago",
+        "descricao": "A eletricidade atravessa a escuridão criando relâmpagos.",
+        "tags": ["clima", "energia"]
+    },
+    {
+        "a": "🔌 eletricidade",
+        "b": "🌬️ vento",
+        "resultado": "🌪️ tempestade elétrica",
+        "descricao": "A eletricidade agita o vento criando tempestades.",
+        "tags": ["clima", "energia"]
+    },
+    {
+        "a": "🔌 eletricidade",
+        "b": "❤️ vida",
+        "resultado": "🧠 estímulo",
+        "descricao": "A eletricidade estimula a vida.",
+        "tags": ["biologia", "energia"]
+    },
+    {
+        "a": "✨ luz",
+        "b": "🌑 escuridao",
+        "resultado": "⚫ sombra",
+        "descricao": "A luz encontra a escuridão e cria uma sombra.",
+        "tags": ["contraste", "fantasia"]
+    },
+    {
+        "a": "✨ luz",
+        "b": "🌬️ vento",
+        "resultado": "💨 claridade",
+        "descricao": "O vento espalha a luz, iluminando tudo ao redor.",
+        "tags": ["clima", "natureza"]
+    },
+    {
+        "a": "✨ luz",
+        "b": "❤️ vida",
+        "resultado": "🌱 crescimento",
+        "descricao": "A luz nutre a vida e faz plantas crescerem.",
+        "tags": ["biologia", "energia"]
+    },
+    {
+        "a": "🌑 escuridao",
+        "b": "🌬️ vento",
+        "resultado": "🌫️ neblina sombria",
+        "descricao": "O vento espalha a escuridão criando uma névoa pesada e misteriosa.",
+        "tags": ["fantasia", "sombra", "clima"]
+    },
+    {
+        "a": "🌑 escuridao",
+        "b": "❤️ vida",
+        "resultado": "🕯️ essência perdida",
+        "descricao": "A escuridão envolve a vida, tornando a energia vital mais fraca e misteriosa.",
+        "tags": ["fantasia", "vida", "misterio"]
+    },
+    {
+        "a": "🌬️ vento",
+        "b": "❤️ vida",
+        "resultado": "🍃 respiração vital",
+        "descricao": "O vento espalha a vida, dando energia e movimento aos seres vivos.",
+        "tags": ["vida", "natureza", "clima"]
+    }
 ]
