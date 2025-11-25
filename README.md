@@ -75,16 +75,6 @@ O site foi adaptado para:
 
 ---
 
-## 🧩 Próximas melhorias (opcional)
-
-* Mais elementos no `data.json`
-* Efeitos sonoros ao misturar itens
-* Animação das cartas
-* Sistema de raridade
-* Melhorar o background com uma imagem 4K
-
----
-
 ## 🧑‍🏫 Objetivo
 
 O intuito é **praticar código simples e claro**, sem complexidade avançada.
@@ -102,3 +92,4 @@ O foco está em:
 Esse projeto é **educacional**.
 
 Pode usar, copiar e modificar como quiser.
+
